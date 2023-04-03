@@ -4,9 +4,6 @@ url=$1
 dic=$2
 MAX_JOBS=$3
 
-dictionary_size=`wc -c $dic`
-found_users=("eliot")
-
 if [ $# -lt 3 ]; then
     echo "Usage: wordpressUserDiscovery.sh <url> <dictionary path> <number of threads>"
     exit 0
